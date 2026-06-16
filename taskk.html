@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Gallery</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    font-family: Arial;
+    scroll-behavior:smooth;
+    background:#f5ede3;
+    color:black;
+    padding-top:70px;
+}
+/* Navbar */
+.navbar{
+    box-shadow:0 2px 10px gray;
+}
+
+/* Slider */
+.carousel-caption{
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+    border-radius:10px;
+}
+
+.carousel-caption h1{
+    font-size:50px;
+    font-weight:bold;
+}
+
+/* Gallery Hover */
+.gallery img{
+    transition:0.4s;
+    border-radius:10px;
+}
+
+.gallery img:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px gray;
+}
+
+/* Artist Cards */
+.card{
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px gray;
+}
+
+/* About */
+.about{
+    background:#f8f9fa;
+    padding:40px;
+}
+
+/* Footer */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">🎨 Art Gallery</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="#artist">Artists</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+
+</div>
+</nav>
+
+<!-- Slider -->
+<div id="slider" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="hall.jpeg" class="d-block w-100" height="550">
+
+<div class="carousel-caption">
+<h1>Discover Creative Art</h1>
+<p>Where Imagination Meets Canvas</p>
+</div>
+</div>
+
+<div class="carousel-item">
+<img src="modern.jpg" class="d-block w-100" height="550">
+
+<div class="carousel-caption">
+<h1>Modern Art Collection</h1>
+<p>Experience Beautiful Masterpieces</p>
+</div>
+</div>
+
+<div class="carousel-item">
+<img src="museum.webp" class="d-block w-100" height="550">
+
+<div class="carousel-caption">
+<h1>Creative Minds Together</h1>
+<p>Explore Inspiring Artwork</p>
+</div>
+</div>
+
+</div>
+
+<button class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+<!-- Gallery -->
+<section class="container mt-5 gallery" id="gallery">
+
+<h2 class="text-center mb-4">Art Collection</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+<img src="abstract.jpg" class="img-fluid">
+</div>
+
+<div class="col-md-4">
+<img src="nature.jpg" class="img-fluid">
+</div>
+
+<div class="col-md-4">
+<img src="gallexy.jpg" class="img-fluid">
+</div>
+
+</div>
+
+</section>
+
+<!-- Artists -->
+<!-- Featured Artists -->
+<section class="container mt-5" id="artist">
+
+<h2 class="text-center mb-5">Meet Our Artists</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-4">
+<div class="card artist-card text-center p-3">
+
+<img src="artist1.jpg" class="artist-img">
+
+<div class="card-body">
+<h4>John Smith</h4>
+<p class="text-muted">Modern Art Specialist</p>
+<p>Creates stunning modern canvas artwork with unique color combinations.</p>
+<button class="btn btn-dark">View Profile</button>
+</div>
+
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card artist-card text-center p-3">
+
+<img src="artist2.jpg" class="artist-img">
+
+<div class="card-body">
+<h4>Emma Rose</h4>
+<p class="text-muted">Abstract Painter</p>
+<p>Known for expressive abstract paintings inspired by emotions and nature.</p>
+<button class="btn btn-dark">View Profile</button>
+</div>
+
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="card artist-card text-center p-3">
+
+<img src="artist3.jpg" class="artist-img">
+
+<div class="card-body">
+<h4>David Lee</h4>
+<p class="text-muted">Creative Illustrator</p>
+<p>Specialized in digital illustrations and imaginative concept artwork.</p>
+<button class="btn btn-dark">View Profile</button>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+<section class="about mt-5" id="about">
+
+<div class="container">
+
+<h2>About Our Gallery</h2>
+
+<p>
+Our Art Gallery is dedicated to promoting creativity and inspiring people through art. 
+We display a wide collection of paintings, sketches, abstract designs, and modern artwork created by skilled artists. 
+The gallery provides a space where art lovers can discover unique masterpieces and appreciate the power of imagination and culture.
+</p>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+<section class="container mt-5 mb-5" id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" class="form-control mb-3" placeholder="Enter Name">
+
+<input type="number" class="form-control mb-3" placeholder="Enter number">
+
+<input type="text" class="form-control mb-3" placeholder="Enter address">
+
+<textarea class="form-control mb-3" placeholder="Message"></textarea>
+
+<button class="btn btn-dark">Send Message</button>
+
+</form>
+
+</section>
+
+<!-- Google Map -->
+<section class="container mt-5 mb-5">
+
+<h2 class="text-center mb-4">Visit Us</h2>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK"
+width="100%"
+height="400"
+style="border:0;"
+allowfullscreen="">
+</iframe>
+
+</section>
+
+<!-- Footer -->
+<footer> 
+Art Gallery | All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
